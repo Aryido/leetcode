@@ -19,4 +19,42 @@
 <entry path="C:\DataSource\java-1.8.0-openjdk.ojdkbuild.windows64\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="C:\DataSource\java180openjdkwindows" version="1.8.0_232">
+<bootpath>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\resources.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\rt.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\sunrsasign.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\jsse.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\jce.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\charsets.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\jfr.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\DataSource\java180openjdkwindows\jre" version="1.8.0_232">
+<bootpath>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\resources.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\rt.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\sunrsasign.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\jsse.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\jce.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\charsets.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\jfr.jar"/>
+<entry path="C:\DataSource\java180openjdkwindows\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\DataSource\java180openjdkwindows\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 </libraryInfos>

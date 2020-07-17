@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1594950382867" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1594950382867" name\="java-1.8.0-openjdk.ojdkbuild.windows64" path\="C\:\\DataSource\\java-1.8.0-openjdk.ojdkbuild.windows64"/>\r\n</vmType>\r\n</vmSettings>\r\n
+=======
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1594997499467" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1594950382867" name\="java-1.8.0-openjdk.ojdkbuild.windows64" path\="C\:\\DataSource\\java-1.8.0-openjdk.ojdkbuild.windows64"/>\r\n<vm id\="1594997499467" javadocURL\="https\://docs.oracle.com/javase/8/docs/api/" name\="java180openjdkwindows" path\="C\:\\DataSource\\java180openjdkwindows"/>\r\n</vmType>\r\n</vmSettings>\r\n
+>>>>>>> ae30416eeefa91e3b0e58533223c647601108296
