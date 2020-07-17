@@ -112,3 +112,65 @@ java.net.UnknownHostException: jope.ow2.org
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-07-17 22:49:23.566 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_232
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:30.856
+!MESSAGE Removing part descriptor with the 'org.hibernate.eclipse.console.views.KnownConfigurationsView' id and the 'Hibernate Configurations' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-17 22:51:32.519
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Henry'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:33.998
+!MESSAGE Removing part descriptor with the 'org.hibernate.eclipse.console.views.QueryPageTabView' id and the 'Hibernate Query Result' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.244
+!MESSAGE Removing part descriptor with the 'org.hibernate.eclipse.console.views.DynamicSQLPreviewView' id and the 'Hibernate Dynamic SQL Preview' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.393
+!MESSAGE Removing part descriptor with the 'org.hibernate.eclipse.console.views.QueryParametersView' id and the 'Query Parameters' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.495
+!MESSAGE Removing part descriptor with the 'org.eclipse.ajdt.ui.EventTraceView' id and the 'AJDT Event Trace' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.601
+!MESSAGE Removing part descriptor with the 'org.eclipse.contribution.visualiser.views.Visualiser' id and the 'Visualiser' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.658
+!MESSAGE Removing part descriptor with the 'org.eclipse.contribution.visualiser.views.Menu' id and the 'Visualiser Menu' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.700
+!MESSAGE Removing part descriptor with the 'org.eclipse.contribution.xref.ui.views.XReferenceView' id and the 'Cross References' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.732
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator' id and the 'Beans Cross References' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.760
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.aop.ui.tracing.eventTraceView' id and the 'AOP Event Trace' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.875
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.beans.ui.livegraph.views.LiveBeansGraphView' id and the 'Live Beans Graph' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:34.940
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.boot.dash.views.BootDashView' id and the 'Boot Dashboard' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:35.185
+!MESSAGE Removing part descriptor with the 'com.springsource.sts.ide.metadata.ui.RequestMappingView' id and the '@RequestMappings' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:35.291
+!MESSAGE Removing part descriptor with the 'com.springsource.sts.roo.ui.rooShellView' id and the 'Roo Shell' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:35.312
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.ui.navigator.springExplorer' id and the 'Spring Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-07-17 22:51:35.338
+!MESSAGE Removing part descriptor with the 'org.springsource.ide.eclipse.commons.browser.View' id and the 'Browser View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
