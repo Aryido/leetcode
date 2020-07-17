@@ -1,0 +1,41 @@
+package leetcodePratice;
+
+public class exercise1_Two_Sum {
+
+	/*
+	 * Example:
+	 * 
+	 * Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7
+	 * =9, return [0, 1].
+	 * 
+	 */
+
+	/*
+	 * Solution1
+	 */
+	public static void targetFunction1(Integer[] array, Integer target) {
+		for (int i = 0; i < array.length; i++) {
+			for (int j = i + 1; j < array.length; j++) {
+				int a = array[i] + array[j];
+				if (a == target) {
+					String solutionForm = "[" + i + ", " + j + "]";
+					System.out.println(solutionForm);
+					break;
+				}
+			}
+		}
+
+		System.out.println("NoSolution!");
+
+	}
+
+	public static void main(String[] args) {
+
+		Integer[] array = { 2, 7, 11, 15 };
+		int target = 18;
+
+		exercise1_Two_Sum.targetFunction1(array, target);
+
+	}
+
+}
