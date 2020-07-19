@@ -1,6 +1,6 @@
 package leetcodePratice;
 
-public class exercise1_Two_Sum {
+public class exercise5_LeetCode258_Add_Digits {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -2,7 +2,7 @@ package leetcodePratice;
 
 import java.util.HashMap;
 
-public class exercise1_Leetcode1_Two_Sum {
+public class exercise1_LeetCode1_Two_Sum {
 
 	/*
 	 * Example:
@@ -12,7 +12,7 @@ public class exercise1_Leetcode1_Two_Sum {
 	 * 
 	 */
 
-	/*
+	/**
 	 * Solution1
 	 */
 	public static void targetFunction1(int[] array, int target) {
@@ -32,8 +32,8 @@ public class exercise1_Leetcode1_Two_Sum {
 
 	}
 
-	/*
-	 * Solution2 
+	/**
+	 * Solution2  
 	 * 若數字有重複則答案不唯一，此方法不能找出所有結果，但比較快
 	 */
 	public static void targetFunction2(int[] array, int target) {
