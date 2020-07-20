@@ -1,0 +1,10 @@
+package leetcodePratice;
+
+public class exercise6_LeetCode242_Vaild_Anagram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
