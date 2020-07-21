@@ -13,17 +13,22 @@ public class exercise7_LeetCode3_Longest_Substring {
 	 */
 
 	public static int longestSubstring(String str) {
-		String[] strArray = str.split("");
-		int startIndex = 0;
-		int n = 0;
-		HashMap<String, String> map = new HashMap<String, String>();
-		HashMap<String, Integer> subAns = new HashMap<String, Integer>();
+		//空字串或者長度為零返回0
+		if(str==null||str.length()==0) {
+			return 0;
+		}
+		
+		String[] strArray = str.split("");//切字串
+		int startIndex = 0;//開始index
+		int n = 0;//長度
+		HashMap<String, String> map = new HashMap<String, String>();//儲存重複字的容器
+		HashMap<String, Integer> subAns = new HashMap<String, Integer>();//儲存子字串容器
 		
 		while ((startIndex) < str.length()) {
+			
 			for (int i = startIndex; i < str.length(); i++) {
 				if (i > 0 && map.containsKey(strArray[i])) {
-					subAns.put(str.substring(startIndex, startIndex + n),
-							str.substring(startIndex, startIndex + n).length());
+					subAns.put(str.substring(startIndex, startIndex + n), str.substring(startIndex, startIndex + n).length());
 					startIndex = i;
 					break;
 				} else {
@@ -31,16 +36,21 @@ public class exercise7_LeetCode3_Longest_Substring {
 					n++;
 
 				}
+				
 				if (startIndex + n > str.length()) {
 					startIndex++;
 					break;
 				}
+				
 			}
+			
 			if (startIndex + n >= str.length()) {
-				subAns.put(str.substring(startIndex, startIndex + n),
-						   str.substring(startIndex, startIndex + n).length());
+				subAns.put(str.substring(startIndex),str.substring(startIndex).length());
+				n=0;
+				map.clear();
 				break;
 			}
+			
 			n = 0;
 			map.clear();
 
@@ -56,7 +66,7 @@ public class exercise7_LeetCode3_Longest_Substring {
 	}
 
 	public static void main(String[] args) {
-		int ans = longestSubstring("abcabcabcd");
+		int ans = longestSubstring("aabbasaaaasds");
 		System.out.println(ans);
 
 	}
