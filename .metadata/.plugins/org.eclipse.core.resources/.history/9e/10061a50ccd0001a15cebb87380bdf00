@@ -1,0 +1,11 @@
+package leetcodePratice;
+
+public class asd {
+
+	public static void main(String[] args) {
+		StringBuffer sba = new StringBuffer("1010").reverse();
+		int p = sba.charAt(i)-'0';
+
+	}
+
+}

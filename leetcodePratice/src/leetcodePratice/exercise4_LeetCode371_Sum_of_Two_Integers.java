@@ -29,7 +29,7 @@ public class exercise4_LeetCode371_Sum_of_Two_Integers {
 	 */
 	public static int sumOfTwoNum(int a, int b) {
 		
-		int carry=0;//進為值
+		int carry=0;//進位值
 		
 		if(a==0) {
 			return b;

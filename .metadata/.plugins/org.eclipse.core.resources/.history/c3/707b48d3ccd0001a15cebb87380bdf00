@@ -1,0 +1,58 @@
+package leetcodePratice;
+
+public class exercise18_LeetCode67_Add_Binary {
+
+	/*
+	 	Given two binary strings, return their sum (also a binary string).
+		The input strings are both non-empty and contains only characters 1 or 0.
+		
+		Example 1:
+				Input: a = "11", b = "1"
+				Output: "100"
+				
+		Example 2:
+				Input: a = "1010", b = "1011"
+				Output: "10101"
+	 */
+	
+	static String addBinary(String a, String b) {
+		String ans="";
+		
+		StringBuffer sba = new StringBuffer(a).reverse();
+		StringBuffer sbb = new StringBuffer(b).reverse();
+		int maxLength=Math.max(sba.length(), sbb.length());
+		
+		//把兩個數補零至長度都一樣
+		if(sba.length()<maxLength) {
+			sba.append("0");
+		}
+		if(sbb.length()<maxLength) {
+			sbb.append("0");
+		}
+		
+		
+		
+		for(int i=0;i<maxLength;i++) {
+			
+			//以下兩方法都能將char轉成數字
+			int p = Character.getNumericValue(sba.charAt(i));
+			//int p = sba.charAt(i)-'0';
+			
+			System.out.println(p);
+			
+			
+		}
+		
+		
+		return ans;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		addBinary("1010","1011");
+
+	}
+
+}
