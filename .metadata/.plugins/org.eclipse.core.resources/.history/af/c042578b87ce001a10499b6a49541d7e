@@ -1,0 +1,10 @@
+package leetcodePratice;
+
+public class exercise12_LeetCode231_Power_Of_Two {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
