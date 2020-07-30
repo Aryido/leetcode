@@ -1,5 +1,7 @@
 package leetcodePratice;
 
+import java.util.ArrayList;
+
 public class exercise2_LeetCode344_Reverse_String {
 
 	/*
@@ -20,11 +22,42 @@ public class exercise2_LeetCode344_Reverse_String {
 		System.out.println(sb);
 	}
 	
+//	public static void reverseString2(String string) {
+//		StringBuilder sb = new StringBuilder();
+//		sb.append(string);
+//		sb.reverse();
+//		System.out.println(sb);
+//	}
+	
+	public static void reverseString2(char[] s) {
+		StringBuilder sb = new StringBuilder();
+		for(char p:s) {
+			sb.append(p);
+		}
+		sb.reverse();
+		
+        System.out.println(sb);
+    }
+	
+	//LEETCODE
+	 public void reverseString3(char[] s) {
+	        int left = 0, right = s.length - 1;
+	        while (left < right) {
+	            char tmp = s[left];
+	            s[left] = s[right];
+	            s[right] = tmp;
+	            left++;
+	            right--;
+	        }
+	    }
 	
 	public static void main(String[] args) {
 		
 		String s="hello";
 		reverseString(s);
+		
+		char[] p= {'h','e','l','l','o'};
+		reverseString2(p);
 		
 	}
 

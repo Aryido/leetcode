@@ -14,27 +14,27 @@ public class exercise1_LeetCode1_Two_Sum {
 
 	/**
 	 * Solution1
+	 * LEETCODE
 	 */
-	public static void targetFunction1(int[] array, int target) {
-		String solutionForm = null;
-		for (int i = 0; i < array.length; i++) {
-			for (int j = i + 1; j < array.length; j++) {
-				int a = array[i] + array[j];
+    public int[] twoSum(int[] nums, int target) {
+        int[] solutionForm= new int[2];
+		for (int i = 0; i < nums.length; i++) {
+			for (int j = i + 1; j < nums.length; j++) {
+				int a = nums[i] + nums[j];
 				if (a == target) {
-					solutionForm = "[" + i + ", " + j + "]";
-					System.out.println(solutionForm);
+					solutionForm[0]=i;
+					solutionForm[1]=j;
 				}
 			}
 		}
 		if (solutionForm == null) {
 			System.out.println("NoSolution!");
 		}
-
-	}
+		return solutionForm;
+    }
 
 	/**
-	 * Solution2  
-	 * 若數字有重複則答案不唯一，此方法不能找出所有結果，但比較快
+	 * Solution2 若數字有重複則答案不唯一，此方法不能找出所有結果，但比較快
 	 */
 	public static void targetFunction2(int[] array, int target) {
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
@@ -57,7 +57,6 @@ public class exercise1_LeetCode1_Two_Sum {
 		int[] array = { 2, 2, 14, 7 };
 		int target = 9;
 
-		targetFunction1(array, target);
 		System.out.println("////////////////////");
 		targetFunction2(array, target);
 	}

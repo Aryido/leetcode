@@ -18,34 +18,35 @@ public class exercise6_LeetCode242_Vaild_Anagram {
 	 * 	使用map存入字串再來比較
 	 * 
 	 */
-	public static Boolean anagramFuntion(String prototypeStrng, String string) {
+	//LEETCODE
+	 public static boolean isAnagram(String s, String t) {
 		//字長度不一樣 一定非重組字
-		if(prototypeStrng.length()!=string.length()) {
-			return false;
-		}
-		
-		String[] prototypeArray = prototypeStrng.split("");
-		String[] stringArray = string.split("");
-		
-		 HashMap<String, String> map = new HashMap<String,String>();
-		 for(String p:prototypeArray) {
-			 map.put(p,p);
-		 }
-		
-		 for(String s:stringArray) {
-			 if(!map.containsKey(s)) {
-				 break;
+			if(s.length()!=t.length()) {
+				return false;
+			}
+			
+			String[] prototypeArray = s.split("");
+			String[] stringArray = t.split("");
+			
+			 HashMap<String, String> map = new HashMap<String,String>();
+			 for(String p:prototypeArray) {
+				 map.put(p,p);
 			 }
-			 return true;
-		 }
-				
-		return false;
-	}
+			
+			 for(String sa:stringArray) {
+				 if(!map.containsKey(sa)) {
+					 break;
+				 }
+				 return true;
+			 }
+					
+			return false;
+	    }
 	
 	
 	public static void main(String[] args) {
-		Boolean ans = anagramFuntion("aapa", "paaa");
-		System.out.println(ans);
+	
+		System.out.println(isAnagram("aapa", "paaa"));
 
 	}
 
