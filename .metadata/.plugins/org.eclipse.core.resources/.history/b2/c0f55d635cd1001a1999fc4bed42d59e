@@ -1,0 +1,49 @@
+package leetcodePratice;
+
+import java.util.HashMap;
+
+public class exercise19_LeetCode136_Single_Number {
+
+	/*
+	 	Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+
+		Note:
+			Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+		
+		Example 1:
+			Input: [2,2,1]
+			Output: 1
+			
+		Example 2:
+			Input: [4,1,2,1,2]
+			Output: 4
+	 */
+	
+	//	方法一
+	static int singleNumberFunction(int[] nums) {
+		int singleNumber=-1;
+			
+		int i=0;
+back1:		for(int k=0+i;k<nums.length;k++) {
+			for(int j=k+1;j<nums.length;j++) {
+				if(nums[k]==nums[j]) {
+					i=j+1;
+					break back1;
+				}
+			}
+			
+		}
+		
+		
+		return singleNumber;
+	}
+	
+	
+	public static void main(String[] args) {
+		int[] nums= {4,1,2,1,2};
+		int ans = singleNumberFunction(nums);
+		System.out.println(ans);
+		
+	}
+
+}
