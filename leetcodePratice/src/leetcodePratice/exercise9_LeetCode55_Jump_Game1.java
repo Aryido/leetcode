@@ -44,6 +44,10 @@ public class exercise9_LeetCode55_Jump_Game1 {
 				return true;
 			}
 			
+			if(array[i]==0 && i==farthest) {
+				return false;
+			}
+			
 		}
 		
 		return false;
@@ -54,8 +58,9 @@ public class exercise9_LeetCode55_Jump_Game1 {
 	
 	
 	public static void main(String[] args) {
-		int[] array= {2,3,1,1,4}; 
+		//int[] array= {2,3,1,1,4}; 
 		//int[] array= {3,2,1,0,4}; 
+		int[] array= {1,0,1,0}; 
 		System.out.println(jumpGameFunction(array));
 		
 	}

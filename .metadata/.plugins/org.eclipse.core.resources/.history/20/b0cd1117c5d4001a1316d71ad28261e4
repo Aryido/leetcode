@@ -1,0 +1,64 @@
+package leetcodePratice;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class exercise21_LeetCode345_Reverse_Vowels_Of_String {
+
+	/*
+	 	Write a function that takes a string as input and reverse only the vowels of a string.
+
+		Example 1:
+		
+				Input: "hello"
+				Output: "holle"
+				
+		Example 2:
+		
+				Input: "leetcode"
+				Output: "leotcede"
+		Note:
+				The vowels does not include the letter "y".
+	 */
+	
+	
+	public String reverseVowels(String s) {	
+		String ans="";
+		//	母音字
+		HashSet set = new HashSet<String>();
+		set.add("a");
+		set.add("e");
+		set.add("i");
+		set.add("o");
+		set.add("u");
+		
+		HashMap<Integer,String> map = new HashMap<Integer,String>();
+		String[] arrayStr = s.split("");
+		int index=1;
+		for(int i=0;i<s.length();i++) {
+			if(set.contains(arrayStr[i])) {
+				map.put(index，arrayStr[i]);
+				index++;
+			}	
+		}
+		
+		for(int i=0;i<s.length();i++) {
+			if(set.contains(arrayStr[i])) {
+				
+				
+			}
+		}
+		
+		
+		
+		
+		return ans;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

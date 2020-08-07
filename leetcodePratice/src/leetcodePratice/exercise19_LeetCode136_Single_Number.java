@@ -32,9 +32,10 @@ public class exercise19_LeetCode136_Single_Number {
 				map.put(nums[i], 1);
 			}
 		}	
-		for(Entry<Integer, Integer> s:map.entrySet()) {
-			if(s.getValue()==1) {
-				singleNumber1=s.getKey();
+		
+		for(Integer p:map.keySet()) {
+			if(map.get(p)==1) {
+				singleNumber1=p;
 				break;
 			}	
 		}
@@ -43,7 +44,7 @@ public class exercise19_LeetCode136_Single_Number {
 	
 	
 	/*
-	 * 上網看到的非人類解法...
+	 * 上網看到的非人類解法...LEETCODE
 	 */
 	static int singleNumberFunction2(int[] nums) {
 		int singleNumber = 0;

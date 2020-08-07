@@ -1,0 +1,54 @@
+package leetcodePratice;
+
+import java.util.HashMap;
+
+public class exercise10_LeetCode205_Isomorphic_Strings {
+
+	/*
+	 	Given two strings s and t, determine if they are isomorphic.
+		Two strings are isomorphic if the characters in s can be replaced to get t.
+		All occurrences of a character must be replaced with another character while preserving the order of characters. 
+		No two characters may map to the same character but a character may map to itself.
+		
+		For example, 
+			Given "egg", "add", return true.
+			
+			Given "foo", "bar", return false.
+			
+			Given "paper", "title", return true.
+	 */
+	
+	
+	public static boolean isIsomorphic(String s, String t) {
+		
+		if(s.length()!=t.length()) {
+			return false;
+		}
+		
+		String[] arrays = s.split("");
+		String[] arrayt = t.split("");
+		
+		HashMap<String, String> maps = new HashMap<String,String>();
+		for(int i=0;i<arrays.length;i++) {
+			if(!maps.containsKey(arrays[i])) {
+				maps.put(arrays[i], arrayt[i]);
+			}
+		}
+		StringBuffer sb = new StringBuffer();
+		for(int i=0;i<arrayt.length;i++) {
+			sb.append(maps.get(arrays[i]));
+		}
+		if(t.equals(sb.toString())) {
+			return true;
+		}
+		return false;
+    }
+	
+	public static void main(String[] args) {
+		
+		String s="egg";
+		String t="add";
+		System.out.println(isIsomorphic(s, t));
+	}
+
+}

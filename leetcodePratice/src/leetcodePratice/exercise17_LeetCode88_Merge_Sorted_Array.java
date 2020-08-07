@@ -47,16 +47,33 @@ public class exercise17_LeetCode88_Merge_Sorted_Array {
 		
 		return nums1;
 	}
+	
+	
+	//LEETCODE
+	public static void merge(int[] nums1, int m, int[] nums2, int n) {	
+        for(int i=m;i<nums1.length;i++) {
+        	nums1[i]=nums2[i-m];
+        }
+        
+        Arrays.sort(nums1);
+        
+        for(int p:nums1) {
+			System.out.print(p+" ");
+		}
+    }
 
 	public static void main(String[] args) {
 
-		int[] nums1 = { 1, 7, 11, 17, 0, 0, 0 };
-		int[] nums2 = { 1, 6, 12 };
+		int[] nums1 = {1,2,3,0,0,0};
+		int[] nums2 = { 2,5,6 };
 		
-		int[] ansArray = mergeSortedArrayFunction(nums1, nums2);
-		for(int p:ansArray) {
-			System.out.print(p+" ");
-		}
+//		int[] ansArray = mergeSortedArrayFunction(nums1, nums2);
+//		for(int p:ansArray) {
+//			System.out.print(p+" ");
+//		}
+		int m=3;
+		int n=3;
+		merge(nums1, m, nums2, n);
 
 	}
 

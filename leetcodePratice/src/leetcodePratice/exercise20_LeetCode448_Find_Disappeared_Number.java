@@ -31,7 +31,7 @@ public class exercise20_LeetCode448_Find_Disappeared_Number {
 		}
 
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		for (int j = 1; j < nums.length; j++) {
+		for (int j = 1; j <= nums.length; j++) {
 			if (!set.contains(j)) {
 				list.add(j);
 			}

@@ -14,27 +14,16 @@ public class exercise13_LeetCode58_Length_Of_Last_Word {
 	 */
 
 	public static int lengthOfLastWordFunction(String str) {
-		if (str == null || str.length() == 0) {
-			return 0;
-		}
-
-		String[] strArray = str.split("\\s+");
-		
-//		for(String s:strArray) {
-//			System.out.println(s);
-//		}
-		
-		String lastString = strArray[strArray.length-1];
-//		System.out.println(lastString);
-		System.out.println(lastString.length());
-		
-		return 0;
-	}
-
-	public static void main(String[] args) {
-		String str = "     Hello  World    ";
-		lengthOfLastWordFunction(str);
-
-	}
+		 if (str == null || str.length() == 0) {
+				return 0;
+			}
+			String[] strArray = str.split("\\s+");	
+	        if(strArray==null||strArray.length==0){
+	            return 0;
+	        }
+	        
+			String lastString = strArray[strArray.length-1];		
+			return lastString.length();
+	    }
 
 }

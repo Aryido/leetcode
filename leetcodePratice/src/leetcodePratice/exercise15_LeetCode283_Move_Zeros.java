@@ -1,6 +1,5 @@
 package leetcodePratice;
 
-import java.util.Arrays;
 
 public class exercise15_LeetCode283_Move_Zeros {
 
@@ -20,7 +19,7 @@ public class exercise15_LeetCode283_Move_Zeros {
 	 */
 	static int[] moveZerosFunction(int[] nums) {
 		
-		//遇到非0整數，將整數塞到index的位子
+		//	遇到非0整數，將整數塞到index的位子
 		int index=0;
 		for(int i=0;i<nums.length;i++) {
 			if(nums[i]==0) {
