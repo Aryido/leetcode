@@ -1,0 +1,10 @@
+package leetcodePratice;
+
+public class exercise24_LeetCode9_Palindrome_Number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

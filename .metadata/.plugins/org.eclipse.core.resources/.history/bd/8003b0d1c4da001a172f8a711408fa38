@@ -1,0 +1,10 @@
+package leetcodePratice;
+
+public class exercise28_LeetCode83_Remove_Duplicate_From_Sort_List {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
