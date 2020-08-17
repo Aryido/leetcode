@@ -1,0 +1,10 @@
+package leetcodePratice;
+
+public class exercise38_LeetCode26_Remove_The_Duplicates_From_Sort_Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
