@@ -1,0 +1,78 @@
+package leetcodePratice;
+
+import java.util.Arrays;
+
+
+public class exercise43_LeetCode299_Bulls_And_Cows {
+
+	/*
+	 	Example 1:
+
+				Input: secret = "1807", guess = "7810"
+				
+				Output: "1A3B"
+				
+				Explanation: 
+					1 bull and 3 cows. The bull is 8, the cows are 0, 1 and 7.
+			
+		Example 2:
+		
+				Input: secret = "1123", guess = "0111"
+				
+				Output: "1A1B"
+				
+				Explanation: 
+					The 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow.
+	 */
+	
+	
+	public static String getHint(String secret, String guess) {
+        StringBuffer sb = new StringBuffer();
+		
+      //再來判斷位置和數字一樣的
+        int countSamPlaceAndNum = 0;
+        for(int i=0; i<secret.length(); i++) {
+        	if(secret.charAt(i) == guess.charAt(i)) {
+        		countSamPlaceAndNum++;
+        		secret=secret.replace(secret.charAt(i), '_');
+        		guess=guess.replace(guess.charAt(i), '_');
+        	}
+        }
+        
+        
+        
+        //先判斷有幾個數字一樣
+        String[] arraySecret = secret.split("");
+        Arrays.sort(arraySecret);
+        String[] arrayGuess = secret.split("");
+        Arrays.sort(arrayGuess);
+        int countSamNum = 0;
+        int index = 0;
+        for(int i=0;i<arraySecret.length;i++) {
+        	if(arraySecret[i].equals("_")) {
+        		continue;
+        	}
+        	for(int j = index;j<arraySecret.length;j++) {
+        		if(arraySecret[i].equals(arrayGuess[j])) {
+        			countSamNum++;
+        			index=j++;
+        			break;
+        		}
+        	}
+        }
+        
+        
+     
+        
+        sb.append(countSamPlaceAndNum).append("A").append(countSamNum).append("B");
+		
+        return sb.toString();
+    }
+	
+	
+	
+	public static void main(String[] args) {
+		String ans = getHint("1807", "7810");
+		System.out.println(ans);
+	}
+}

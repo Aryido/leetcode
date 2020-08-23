@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
@@ -12,19 +11,23 @@
 <fullyQualifiedTypeName name="leetcodePratice.exercise21_LeetCode345_Reverse_Vowels_Of_String"/>
 <fullyQualifiedTypeName name="leetcodePratice.exercise22_LeetCode189_Rotate_Array"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.TreeSet"/>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.lang.Long"/>
 <fullyQualifiedTypeName name="leetcodePratice.exercise28_LeetCode83_Remove_Duplicate_From_Sort_List.ListNode"/>
 <fullyQualifiedTypeName name="leetcodePratice.exercise29_LeetCode13_Roman_To_Integer"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="leetcodePratice.exercise33_LeetCode21_Merge_Two_Sorted_List.ListNode"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="leetcodePratice.exercise39_LeetCode2_Add_Two_Number.ListNode"/>
+<fullyQualifiedTypeName name="leetcodePratice.exercise41_LeetCode203_Remove_Linked_List_Elements"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.Stack"/>
-<fullyQualifiedTypeName name="leetcodePratice.exercise33_LeetCode21_Merge_Two_Sorted_List.ListNode"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
 </qualifiedTypeNameHistroy>
