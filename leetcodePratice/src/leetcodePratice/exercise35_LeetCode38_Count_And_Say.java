@@ -24,12 +24,42 @@ public class exercise35_LeetCode38_Count_And_Say {
 			Each term of the sequence of integers will be represented as a string.
 	 */
 	
+	
+	/*
+	 *	 遞迴解法
+	 */
 	public static String countAndSay(int n) {
 		
-	 }
+		// integer n where 1 ≤ n ≤ 30
+		if(n==1) {
+			return "1";
+		}
+		
+		String ansStr = "";
+		String str = countAndSay(n-1)+"*"; //	加上"*"可避免IndexOutOfBounds，且更好判斷迴圈何時終止
+		int count = 1;
+		
+		for(int i=0;i<str.length();i++) {	
+			
+			if(str.charAt(i)=='*') {
+				break;
+			}
+			
+			if(str.charAt(i)==str.charAt(i+1)) {
+				count++;
+			}else {
+				ansStr=""+ansStr+count+str.charAt(i);
+				count=1;// count初始化
+			}
+		}
+		
+		return ansStr;
+	}
 	
 	
 	public static void main(String[] args) {
+		String ans = countAndSay(12);
+		System.out.println(ans);
 		
 	}
 

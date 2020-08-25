@@ -38,6 +38,7 @@ public class exercise43_LeetCode299_Bulls_And_Cows {
         		countSamPlaceAndNum++;
         		continue;
         	}
+        	//	不一樣的部分用List存起來
         	secretList.add(secret.charAt(i));
         	guessList.add(guess.charAt(i));
         }
