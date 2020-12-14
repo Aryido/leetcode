@@ -112,7 +112,7 @@ public class test {
 	public static void main(String[] args) {
 
 		//longestPalindrome(100, "frzrmzlygfveulqfpdbhlqdqrrcrwdnxeuoqqeklaitgdphcspijthbsfyfvladzpbfudkklrwqaozmixrpifeffeclhbvfukbye");
-		reverseWordFunction("apple");
+		reverseWordFunction("book");
 
 	}
 

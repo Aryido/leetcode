@@ -97,14 +97,9 @@ public class test {
 	{	
 		String[] arrayStr = str.split("");
 		
-		StringBuilder sb = new StringBuilder();
-		for(int i = str.length(); i>0 ;i--) {
-			
-			sb.append(arrayStr[i-1]);
+		for(int i = arrayStr.length;i<0;i--) {
 			
 		}
-		
-		System.out.println(sb);
 		
 	}
 	
@@ -112,7 +107,6 @@ public class test {
 	public static void main(String[] args) {
 
 		//longestPalindrome(100, "frzrmzlygfveulqfpdbhlqdqrrcrwdnxeuoqqeklaitgdphcspijthbsfyfvladzpbfudkklrwqaozmixrpifeffeclhbvfukbye");
-		reverseWordFunction("apple");
 
 	}
 
